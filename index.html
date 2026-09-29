@@ -7,15 +7,16 @@
 <meta name="description" content="Belajar coding, game, robotik, dan literasi digital dengan seru untuk anak 6–17 tahun di Palembang. Kelas kecil, mentor ramah, trial gratis.">
 <meta property="og:title" content="TechKids.id — Anak Palembang, Pencipta Teknologi Masa Depan">
 <meta property="og:description" content="Kursus coding seru untuk anak 6–17 tahun di Palembang. Daftar trial gratis.">
-<meta name="theme-color" content="#0B5FA5">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230B5FA5'/%3E%3Cpath d='M24 20L12 32l12 12' fill='none' stroke='%23fff' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M40 20l12 12-12 12' fill='none' stroke='%23F6B92B' stroke-width='6' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%23F26B1D'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0275FE">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:image" content="https://sangsakawira.github.io/techkids-id/assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --musi:#0B5FA5; --musi-dark:#083F70; --songket:#F26B1D; --emas:#F6B92B;
-  --navy:#0A2540; --daun:#22A06B; --awan:#F4F8FC; --abu:#5B6B7C; --garis:#DCE5EE; --r:18px;
+  --biru:#0275FE; --biru-dark:#0A4FB3; --koral:#E8262F; --kuning:#FEBF04;
+  --navy:#061539; --hijau:#03BE50; --hijau-tua:#08893E; --awan:#F4F8FC; --abu:#5B6B7C; --garis:#DCE5EE; --r:18px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -26,7 +27,7 @@ a{color:inherit}
 section{padding:84px 0}
 .alt{background:var(--awan)}
 h2{font-size:clamp(30px,4.5vw,42px);margin-bottom:10px}
-h2 span{color:var(--songket)}
+h2 span{color:var(--koral)}
 .lead{color:var(--abu);max-width:640px;margin-bottom:40px;font-size:18px}
 .center{text-align:center}
 .center .lead{margin-left:auto;margin-right:auto}
@@ -34,41 +35,42 @@ h2 span{color:var(--songket)}
 .g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
 .g4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .card{background:#fff;border:1px solid var(--garis);border-radius:var(--r);padding:28px}
-:focus-visible{outline:3px solid var(--emas);outline-offset:3px}
+:focus-visible{outline:3px solid var(--kuning);outline-offset:3px}
 
 /* buttons */
 .btn{display:inline-block;font:700 17px 'Nunito',sans-serif;padding:14px 28px;border-radius:99px;border:0;cursor:pointer;text-decoration:none;transition:transform .1s}
 .btn:active{transform:translateY(2px)}
-.btn.p{background:var(--songket);color:#fff;box-shadow:0 4px 0 #BE500F}
+.btn.p{background:var(--koral);color:#fff;box-shadow:0 4px 0 #B31B23}
 .btn.o{background:transparent;color:#fff;border:2px solid #fff;padding:12px 26px}
-.btn.s{background:var(--musi);color:#fff;box-shadow:0 4px 0 var(--musi-dark)}
+.btn.s{background:var(--biru);color:#fff;box-shadow:0 4px 0 var(--biru-dark)}
 
 /* header */
 header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--garis)}
 header .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
-.logo{display:inline-flex;align-items:center;gap:10px;font-family:'Fredoka';font-weight:700;font-size:24px;text-decoration:none;line-height:1}
-.logo svg{width:36px;height:36px}
-.logo .t{color:var(--musi)} .logo .k{color:var(--songket)} .logo .id{color:var(--emas)}
+.logo{display:inline-flex;align-items:center;gap:10px;font-family:'Fredoka';font-weight:700;font-size:26px;text-decoration:none;line-height:1}
+.logo img{height:38px;width:auto}
+.logo .t{color:var(--navy)} .logo .i{color:var(--hijau)} .logo .d{color:var(--koral)}
 nav{display:flex;gap:24px;align-items:center}
 nav a{text-decoration:none;font-weight:700;font-size:15px;color:var(--abu)}
-nav a:hover{color:var(--songket)}
-nav .btn{padding:9px 20px;font-size:15px;color:#fff;box-shadow:0 3px 0 #BE500F}
+nav a:hover{color:var(--koral)}
+nav .btn{padding:9px 20px;font-size:15px;color:#fff;box-shadow:0 3px 0 #B31B23}
 @media(max-width:820px){nav a:not(.btn){display:none}}
 
 /* hero */
-.hero{background:linear-gradient(140deg,var(--musi-dark),var(--musi));color:#fff;padding:88px 0 120px;position:relative;overflow:hidden}
+.hero{background:linear-gradient(140deg,var(--biru-dark),var(--biru));color:#fff;padding:88px 0 120px;position:relative;overflow:hidden}
 .hero .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
 @media(max-width:820px){.hero .wrap{grid-template-columns:1fr}.hero .art{order:-1;max-width:260px}}
-.tag{display:inline-block;background:var(--emas);color:var(--navy);font-weight:800;font-size:13px;padding:6px 14px;border-radius:99px;letter-spacing:.04em;text-transform:uppercase}
+.tag{display:inline-block;background:var(--kuning);color:var(--navy);font-weight:800;font-size:13px;padding:6px 14px;border-radius:99px;letter-spacing:.04em;text-transform:uppercase}
 .hero h1{font-size:clamp(38px,6.5vw,66px);margin:18px 0 16px}
-.hero h1 em{font-style:normal;color:var(--emas)}
+.hero h1 em{font-style:normal;color:var(--kuning)}
 .hero p{font-size:20px;max-width:520px;opacity:.95;margin-bottom:28px}
 .hero .cta{display:flex;gap:14px;flex-wrap:wrap}
 .hero .trust{margin-top:28px;display:flex;gap:22px;flex-wrap:wrap;font-weight:700;font-size:15px;opacity:.95}
-.hero .art svg{width:100%;height:auto;filter:drop-shadow(0 16px 24px rgba(0,0,0,.25));animation:float 4s ease-in-out infinite}
+.hero .art{background:#fff;border-radius:28px;padding:22px;box-shadow:0 20px 40px rgba(6,21,57,.3);animation:float 4s ease-in-out infinite}
+.hero .art img{display:block;width:100%;height:auto}
 @keyframes float{50%{transform:translateY(-12px)}}
 .wave{position:absolute;left:0;bottom:-1px;width:100%;height:70px}
-@media(prefers-reduced-motion:reduce){.hero .art svg{animation:none}html{scroll-behavior:auto}}
+@media(prefers-reduced-motion:reduce){.hero .art{animation:none}html{scroll-behavior:auto}}
 
 /* why */
 .icon{font-size:38px;margin-bottom:10px}
@@ -82,13 +84,13 @@ nav .btn{padding:9px 20px;font-size:15px;color:#fff;box-shadow:0 3px 0 #BE500F}
 .level h3{font-size:32px;margin:4px 0 10px}
 .level ul{list-style:none;margin:8px 0 18px}
 .level li{padding:4px 0 4px 26px;position:relative}
-.level li::before{content:"✓";position:absolute;left:0;font-weight:800;color:var(--emas)}
+.level li::before{content:"✓";position:absolute;left:0;font-weight:800;color:var(--kuning)}
 .level .proj{margin-top:auto;background:rgba(255,255,255,.16);border-radius:12px;padding:12px 14px;font-size:15px}
-.l1{background:var(--daun)} .l2{background:var(--musi)} .l3{background:var(--navy)}
+.l1{background:var(--hijau-tua)} .l2{background:var(--biru)} .l3{background:var(--navy)}
 
 /* steps */
 .step{position:relative;padding-top:8px}
-.num{display:inline-flex;width:48px;height:48px;border-radius:50%;background:var(--emas);color:var(--navy);font:700 24px 'Fredoka';align-items:center;justify-content:center;margin-bottom:12px}
+.num{display:inline-flex;width:48px;height:48px;border-radius:50%;background:var(--kuning);color:var(--navy);font:700 24px 'Fredoka';align-items:center;justify-content:center;margin-bottom:12px}
 .session{display:flex;height:54px;border-radius:14px;overflow:hidden;margin:24px 0 8px;font-weight:800;font-size:13px;color:#fff}
 .session div{display:flex;align-items:center;justify-content:center;text-align:center;padding:0 6px}
 
@@ -98,65 +100,53 @@ nav .btn{padding:9px 20px;font-size:15px;color:#fff;box-shadow:0 3px 0 #BE500F}
 
 /* pricing */
 .price{display:flex;flex-direction:column}
-.price .amt{font:700 34px 'Fredoka';color:var(--musi);margin:6px 0}
+.price .amt{font:700 34px 'Fredoka';color:var(--biru);margin:6px 0}
 .price .amt small{font:600 15px 'Nunito';color:var(--abu)}
 .price ul{list-style:none;margin:12px 0 20px;color:var(--abu)}
 .price li{padding:4px 0 4px 26px;position:relative}
-.price li::before{content:"✓";position:absolute;left:0;color:var(--daun);font-weight:800}
+.price li::before{content:"✓";position:absolute;left:0;color:var(--hijau-tua);font-weight:800}
 .price .btn{margin-top:auto;text-align:center}
-.price.hot{border:3px solid var(--songket);position:relative}
-.price.hot::before{content:"Paling diminati";position:absolute;top:-14px;left:24px;background:var(--songket);color:#fff;font-weight:800;font-size:12px;padding:3px 12px;border-radius:99px}
+.price.hot{border:3px solid var(--koral);position:relative}
+.price.hot::before{content:"Paling diminati";position:absolute;top:-14px;left:24px;background:var(--koral);color:#fff;font-weight:800;font-size:12px;padding:3px 12px;border-radius:99px}
 .note{font-size:14px;color:var(--abu);margin-top:18px}
 
 /* beasiswa */
-.beasiswa{background:var(--emas);border-radius:var(--r);padding:34px;display:flex;gap:28px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.beasiswa{background:var(--kuning);border-radius:var(--r);padding:34px;display:flex;gap:28px;align-items:center;flex-wrap:wrap;justify-content:space-between}
 .beasiswa h3{font-size:28px;margin-bottom:4px}
 .beasiswa p{max-width:560px}
 
 /* faq */
 details{background:#fff;border:1px solid var(--garis);border-radius:14px;padding:18px 22px;margin-bottom:12px}
 summary{font-weight:800;cursor:pointer;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:12px}
-summary::after{content:"+";font:700 26px 'Fredoka';color:var(--songket);line-height:1}
+summary::after{content:"+";font:700 26px 'Fredoka';color:var(--koral);line-height:1}
 details[open] summary::after{content:"–"}
 details p{color:var(--abu);margin-top:10px}
 
 /* form */
-.cta-box{background:linear-gradient(140deg,var(--musi-dark),var(--musi));color:#fff;border-radius:28px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.cta-box{background:linear-gradient(140deg,var(--biru-dark),var(--biru));color:#fff;border-radius:28px;padding:48px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 @media(max-width:820px){.cta-box{grid-template-columns:1fr;padding:32px 24px}}
 .cta-box h2{color:#fff}
 form{background:#fff;color:var(--navy);border-radius:var(--r);padding:26px}
 label{display:block;font-weight:800;font-size:14px;margin:12px 0 4px}
 input,select{width:100%;padding:12px 14px;border:2px solid var(--garis);border-radius:12px;font:600 16px 'Nunito',sans-serif;color:var(--navy);background:#fff}
-input:focus,select:focus{outline:none;border-color:var(--musi)}
+input:focus,select:focus{outline:none;border-color:var(--biru)}
 form .btn{width:100%;margin-top:18px}
 .privacy{font-size:13px;color:var(--abu);margin-top:10px}
 
 footer{background:var(--navy);color:#b8c7d8;padding:48px 0 32px}
 footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
-footer .logo .t{color:#fff} footer .logo .k{color:var(--emas)} footer .logo .id{color:var(--songket)}
+footer .logo .t{color:#fff}
 footer a{text-decoration:none} footer a:hover{color:#fff}
 footer .copy{width:100%;border-top:1px solid #1d3a5a;padding-top:20px;font-size:14px}
 
-.wa-float{position:fixed;right:18px;bottom:18px;z-index:30;background:var(--daun);color:#fff;font-weight:800;padding:13px 20px;border-radius:99px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25)}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:30;background:var(--hijau-tua);color:#fff;font-weight:800;padding:13px 20px;border-radius:99px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.25)}
 </style>
 </head>
 <body>
 
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <defs>
-    <symbol id="mark" viewBox="0 0 64 64">
-      <rect width="64" height="64" rx="16" fill="#0B5FA5"/>
-      <path d="M0 46 Q 8 40 16 46 T 32 46 T 48 46 T 64 46 V64 H0Z" fill="#083F70"/>
-      <path d="M24 20 L12 32 L24 44" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M40 20 L52 32 L40 44" fill="none" stroke="#F6B92B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="32" cy="32" r="5" fill="#F26B1D"/>
-    </symbol>
-  </defs>
-</svg>
-
 <header>
   <div class="wrap">
-    <a class="logo" href="#atas" aria-label="TechKids.id beranda"><svg aria-hidden="true"><use href="#mark"/></svg><span><span class="t">Tech</span><span class="k">Kids</span><span class="id">.id</span></span></a>
+    <a class="logo" href="#atas" aria-label="TechKids.id beranda"><img src="assets/logo-mark.png" alt="" width="52" height="38"><span><span class="t">techkids.</span><span class="i">i</span><span class="d">d</span></span></a>
     <nav>
       <a href="#kenapa">Kenapa Kami</a>
       <a href="#level">Program</a>
@@ -187,17 +177,8 @@ footer .copy{width:100%;border-top:1px solid #1d3a5a;padding-top:20px;font-size:
         <span>🏠 Offline &amp; online</span>
       </div>
     </div>
-    <div class="art" aria-hidden="true">
-      <svg viewBox="0 0 160 110">
-        <path d="M20 55 Q 55 8 105 30 Q 130 40 150 20 L150 90 Q 130 70 105 80 Q 55 102 20 55Z" fill="#F26B1D"/>
-        <path d="M20 55 Q 55 8 105 30 Q 60 40 20 55Z" fill="#F6B92B" opacity=".55"/>
-        <rect x="52" y="34" width="38" height="28" rx="8" fill="#fff" stroke="#0B5FA5" stroke-width="4"/>
-        <circle cx="63" cy="48" r="4" fill="#0A2540"/><circle cx="79" cy="48" r="4" fill="#0A2540"/>
-        <path d="M62 56 Q 71 62 80 56" fill="none" stroke="#0A2540" stroke-width="3" stroke-linecap="round"/>
-        <path d="M71 34 V22" stroke="#0A2540" stroke-width="3" stroke-linecap="round"/>
-        <circle cx="71" cy="19" r="4.5" fill="#F6B92B"/>
-        <path d="M110 40 l6 4 M112 55 l7 0 M110 70 l6 -4" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
-      </svg>
+    <div class="art">
+      <img src="assets/logo.png" alt="TechKids.id — Belajar. Berkarya. Bertumbuh." width="700" height="494">
     </div>
   </div>
   <svg class="wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 Q 180 0 360 30 T 720 30 T 1080 30 T 1440 30 V70 H0Z" fill="#fff"/></svg>
@@ -257,10 +238,10 @@ footer .copy{width:100%;border-top:1px solid #1d3a5a;padding-top:20px;font-size:
       <div class="step"><div class="num">4</div><h3>Pamer karya</h3><p style="color:var(--abu)">Anak mempresentasikan hasilnya dan mendapat lencana.</p></div>
     </div>
     <div class="session" aria-label="Pembagian waktu 90 menit">
-      <div style="flex:10;background:var(--emas);color:var(--navy)">10'</div>
-      <div style="flex:20;background:var(--songket)">20 menit</div>
-      <div style="flex:45;background:var(--musi)">45 menit</div>
-      <div style="flex:15;background:var(--daun)">15'</div>
+      <div style="flex:10;background:var(--kuning);color:var(--navy)">10'</div>
+      <div style="flex:20;background:var(--koral)">20 menit</div>
+      <div style="flex:45;background:var(--biru)">45 menit</div>
+      <div style="flex:15;background:var(--hijau)">15'</div>
     </div>
     <p class="note">Pemanasan 10 menit · konsep 20 menit · praktik 45 menit · pamer karya 15 menit.</p>
   </div>
@@ -337,7 +318,7 @@ footer .copy{width:100%;border-top:1px solid #1d3a5a;padding-top:20px;font-size:
   <div class="wrap">
     <div class="cta-box">
       <div>
-        <h2>Yuk, coba <span style="color:var(--emas)">kelas gratisnya!</span></h2>
+        <h2>Yuk, coba <span style="color:var(--kuning)">kelas gratisnya!</span></h2>
         <p style="font-size:19px;opacity:.95">Isi data singkat, lalu kami lanjutkan lewat WhatsApp untuk mengatur jadwal trial.</p>
       </div>
       <form id="form" novalidate>
@@ -365,8 +346,8 @@ footer .copy{width:100%;border-top:1px solid #1d3a5a;padding-top:20px;font-size:
 <footer>
   <div class="wrap">
     <div>
-      <a class="logo" href="#atas"><svg aria-hidden="true"><use href="#mark"/></svg><span><span class="t">Tech</span><span class="k">Kids</span><span class="id">.id</span></span></a>
-      <p style="margin-top:12px;max-width:320px">Anak Palembang, Pencipta Teknologi Masa Depan.</p>
+      <a class="logo" href="#atas"><img src="assets/logo-mark.png" alt="" width="52" height="38"><span><span class="t">techkids.</span><span class="i">i</span><span class="d">d</span></span></a>
+      <p style="margin-top:12px;max-width:320px">Belajar. Berkarya. Bertumbuh.<br>Anak Palembang, Pencipta Teknologi Masa Depan.</p>
     </div>
     <div>
       <p><b style="color:#fff">Menu</b></p>

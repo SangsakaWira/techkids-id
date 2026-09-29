@@ -9,12 +9,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --musi:#0B5FA5;
-  --musi-dark:#083F70;
-  --songket:#F26B1D;
-  --emas:#F6B92B;
-  --navy:#0A2540;
-  --daun:#22A06B;
+  --biru:#0275FE;
+  --biru-dark:#0A4FB3;
+  --koral:#E8262F;
+  --kuning:#FEBF04;
+  --navy:#061539;
+  --hijau:#03BE50;
+  --hijau-tua:#08893E;
   --awan:#F4F8FC;
   --putih:#FFFFFF;
   --abu:#5B6B7C;
@@ -25,27 +26,27 @@
 html{scroll-behavior:smooth}
 body{font-family:'Nunito',system-ui,sans-serif;color:var(--navy);background:var(--awan);line-height:1.65;font-size:17px}
 h1,h2,h3{font-family:'Fredoka',sans-serif;line-height:1.15}
-a{color:var(--musi)}
+a{color:var(--biru)}
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 
 /* nav */
 nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--garis)}
 nav .wrap{display:flex;align-items:center;gap:24px;height:60px;overflow-x:auto;white-space:nowrap}
-nav strong{font-family:'Fredoka';font-size:18px;color:var(--musi)}
+nav strong{font-family:'Fredoka';font-size:18px;color:var(--biru)}
 nav a{text-decoration:none;color:var(--abu);font-weight:700;font-size:14px}
-nav a:hover{color:var(--songket)}
+nav a:hover{color:var(--koral)}
 
 /* hero */
-.hero{background:linear-gradient(135deg,var(--musi-dark),var(--musi));color:#fff;padding:96px 0 84px;position:relative;overflow:hidden}
+.hero{background:linear-gradient(135deg,var(--biru-dark),var(--biru));color:#fff;padding:96px 0 84px;position:relative;overflow:hidden}
 .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:60px;background:var(--awan);clip-path:path('M0 40 Q 180 0 360 30 T 720 30 T 1080 30 T 1440 30 V60 H0Z');width:100%}
-.hero .tag{display:inline-block;background:var(--emas);color:var(--navy);font-weight:800;font-size:13px;padding:6px 14px;border-radius:99px;letter-spacing:.04em;text-transform:uppercase}
+.hero .tag{display:inline-block;background:var(--kuning);color:var(--navy);font-weight:800;font-size:13px;padding:6px 14px;border-radius:99px;letter-spacing:.04em;text-transform:uppercase}
 .hero h1{font-size:clamp(40px,7vw,72px);margin:20px 0 12px}
 .hero p{max-width:560px;font-size:20px;opacity:.92}
 .hero .logo-big{margin-bottom:12px}
 
 section{padding:72px 0 8px}
 section h2{font-size:38px;margin-bottom:8px}
-section h2 span{color:var(--songket)}
+section h2 span{color:var(--koral)}
 .lead{color:var(--abu);max-width:680px;margin-bottom:32px}
 h3{font-size:22px;margin:32px 0 12px}
 
@@ -55,33 +56,29 @@ h3{font-size:22px;margin:32px 0 12px}
 .card{background:var(--putih);border:1px solid var(--garis);border-radius:var(--r);padding:28px}
 .card.center{display:flex;align-items:center;justify-content:center;min-height:180px}
 .dark{background:var(--navy);border-color:var(--navy)}
-.blue{background:var(--musi);border-color:var(--musi)}
+.blue{background:var(--biru);border-color:var(--biru)}
 .cap{font-size:13px;color:var(--abu);margin-top:10px;font-weight:600}
 .dark .cap,.blue .cap{color:#cfe0f0}
 
 /* logo */
 .logo{display:inline-flex;align-items:center;gap:12px;font-family:'Fredoka';font-weight:700;font-size:34px;letter-spacing:-.01em;line-height:1}
-.logo .t{color:var(--musi)}
-.logo .k{color:var(--songket)}
-.logo .id{color:var(--emas)}
-.on-dark .t,.on-dark .k{color:#fff}
-.on-dark .k{color:var(--emas)}
-.on-dark .id{color:var(--songket)}
-.logo svg{width:52px;height:52px;flex:none}
-.hero .logo{font-size:44px}
-.hero .logo .t{color:#fff}
-.hero .logo .k{color:var(--emas)}
-.hero .logo .id{color:#ffb98a}
+.logo .t{color:var(--navy)}
+.logo .i{color:var(--hijau)}
+.logo .d{color:var(--koral)}
+.on-dark .t{color:#fff}
+.logo img{height:48px;width:auto;flex:none}
+.hero .logo-big{display:inline-block;background:#fff;border-radius:20px;padding:12px 24px}
+.stack{display:block;max-width:100%;height:auto}
 
 /* clear space */
-.clear{position:relative;padding:36px;border:2px dashed var(--songket);border-radius:12px;display:inline-block}
-.clear::before{content:"x";position:absolute;top:8px;left:50%;font:700 13px 'JetBrains Mono';color:var(--songket)}
-.clear::after{content:"x";position:absolute;left:12px;top:50%;font:700 13px 'JetBrains Mono';color:var(--songket)}
+.clear{position:relative;padding:36px;border:2px dashed var(--koral);border-radius:12px;display:inline-block}
+.clear::before{content:"x";position:absolute;top:8px;left:50%;font:700 13px 'JetBrains Mono';color:var(--koral)}
+.clear::after{content:"x";position:absolute;left:12px;top:50%;font:700 13px 'JetBrains Mono';color:var(--koral)}
 
 /* misuse */
 .bad{position:relative}
 .bad::after{content:"✕";position:absolute;top:10px;right:14px;color:#D64545;font-weight:800;font-size:20px}
-.good::after{content:"✓";position:absolute;top:10px;right:14px;color:var(--daun);font-weight:800;font-size:20px}
+.good::after{content:"✓";position:absolute;top:10px;right:14px;color:var(--hijau);font-weight:800;font-size:20px}
 
 /* colors */
 .sw{border-radius:var(--r);overflow:hidden;border:1px solid var(--garis);background:#fff;cursor:pointer;transition:transform .15s}
@@ -96,24 +93,24 @@ h3{font-size:22px;margin:32px 0 12px}
 #toast.show{transform:translateX(-50%) translateY(0)}
 
 /* type */
-.type-sample .d{font-family:'Fredoka';font-size:56px;font-weight:700;color:var(--musi);line-height:1.1}
+.type-sample .d{font-family:'Fredoka';font-size:56px;font-weight:700;color:var(--biru);line-height:1.1}
 .type-sample .b{font-family:'Nunito';font-size:18px}
 .scale div{padding:10px 0;border-bottom:1px solid var(--garis);display:flex;justify-content:space-between;align-items:baseline;gap:16px}
 .scale small{font-family:'JetBrains Mono';color:var(--abu);font-size:12px;white-space:nowrap}
 
 /* voice */
 .voice li{list-style:none;padding:12px 0;border-bottom:1px solid var(--garis)}
-.voice b{color:var(--songket)}
+.voice b{color:var(--koral)}
 .say-yes,.say-no{border-radius:14px;padding:16px 18px;margin-bottom:12px;font-weight:600}
-.say-yes{background:#E6F6EE;border-left:5px solid var(--daun)}
+.say-yes{background:#E6F6EE;border-left:5px solid var(--hijau)}
 .say-no{background:#FDECEC;border-left:5px solid #D64545}
 .say-yes small,.say-no small{display:block;font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:11px;margin-bottom:2px}
 
 /* ui */
 .btn{display:inline-block;font:700 16px 'Nunito';padding:13px 26px;border-radius:99px;border:0;cursor:pointer;text-decoration:none}
-.btn.p{background:var(--songket);color:#fff;box-shadow:0 4px 0 #BE500F}
-.btn.s{background:var(--musi);color:#fff;box-shadow:0 4px 0 var(--musi-dark)}
-.btn.o{background:#fff;color:var(--musi);border:2px solid var(--musi)}
+.btn.p{background:var(--koral);color:#fff;box-shadow:0 4px 0 #B31B23}
+.btn.s{background:var(--biru);color:#fff;box-shadow:0 4px 0 var(--biru-dark)}
+.btn.o{background:#fff;color:var(--biru);border:2px solid var(--biru)}
 .btn:active{transform:translateY(2px)}
 .pill{display:inline-block;padding:4px 12px;border-radius:99px;font-size:13px;font-weight:800}
 
@@ -122,8 +119,8 @@ h3{font-size:22px;margin:32px 0 12px}
 .level h3{margin:0 0 4px;font-size:28px}
 .level .age{font-weight:800;opacity:.9;font-size:14px;text-transform:uppercase;letter-spacing:.05em}
 .level .em{font-size:44px;position:absolute;right:18px;top:12px;opacity:.9}
-.l1{background:var(--daun)}
-.l2{background:var(--musi)}
+.l1{background:var(--hijau-tua)}
+.l2{background:var(--biru)}
 .l3{background:var(--navy)}
 
 /* mascot */
@@ -133,45 +130,15 @@ h3{font-size:22px;margin:32px 0 12px}
 .post{aspect-ratio:1/1;border-radius:var(--r);padding:28px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;position:relative;overflow:hidden}
 .post h4{font-family:'Fredoka';font-size:30px;line-height:1.15}
 .post .foot{font-weight:800;font-size:14px}
-.p1{background:linear-gradient(160deg,var(--musi),var(--musi-dark))}
-.p2{background:var(--emas);color:var(--navy)}
-.p3{background:var(--songket)}
+.p1{background:linear-gradient(160deg,var(--biru),var(--biru-dark))}
+.p2{background:var(--kuning);color:var(--navy)}
+.p3{background:var(--koral)}
 
 footer{margin-top:80px;background:var(--navy);color:#b8c7d8;padding:48px 0;text-align:center}
 footer strong{color:#fff;font-family:'Fredoka';font-size:20px}
 </style>
 </head>
 <body>
-
-<!-- reusable logo mark -->
-<svg width="0" height="0" style="position:absolute">
-  <defs>
-    <symbol id="mark" viewBox="0 0 64 64">
-      <rect width="64" height="64" rx="16" fill="#0B5FA5"/>
-      <path d="M0 46 Q 8 40 16 46 T 32 46 T 48 46 T 64 46 V64 H0Z" fill="#083F70"/>
-      <path d="M24 20 L12 32 L24 44" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M40 20 L52 32 L40 44" fill="none" stroke="#F6B92B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="32" cy="32" r="5" fill="#F26B1D"/>
-    </symbol>
-    <symbol id="mark-mono" viewBox="0 0 64 64">
-      <rect width="64" height="64" rx="16" fill="currentColor"/>
-      <path d="M24 20 L12 32 L24 44 M40 20 L52 32 L40 44" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-      <circle cx="32" cy="32" r="5" fill="#fff"/>
-    </symbol>
-    <symbol id="fish" viewBox="0 0 160 110">
-      <path d="M20 55 Q 55 8 105 30 Q 130 40 150 20 L150 90 Q 130 70 105 80 Q 55 102 20 55Z" fill="#F26B1D"/>
-      <path d="M20 55 Q 55 8 105 30 Q 60 40 20 55Z" fill="#F6B92B" opacity=".55"/>
-      <rect x="52" y="34" width="38" height="28" rx="8" fill="#fff"/>
-      <rect x="52" y="34" width="38" height="28" rx="8" fill="none" stroke="#0B5FA5" stroke-width="4"/>
-      <circle cx="63" cy="48" r="4" fill="#0A2540"/>
-      <circle cx="79" cy="48" r="4" fill="#0A2540"/>
-      <path d="M62 56 Q 71 62 80 56" fill="none" stroke="#0A2540" stroke-width="3" stroke-linecap="round"/>
-      <path d="M71 34 V22" stroke="#0A2540" stroke-width="3" stroke-linecap="round"/>
-      <circle cx="71" cy="19" r="4.5" fill="#F6B92B"/>
-      <path d="M110 40 l6 4 M112 55 l7 0 M110 70 l6 -4" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".8"/>
-    </symbol>
-  </defs>
-</svg>
 
 <nav>
   <div class="wrap">
@@ -189,10 +156,10 @@ footer strong{color:#fff;font-family:'Fredoka';font-size:20px}
 
 <header class="hero">
   <div class="wrap">
-    <span class="tag">Brand Guideline v1.0</span>
+    <span class="tag">Brand Guideline v1.1</span>
     <h1>Belajar IT itu<br>seru, Kak!</h1>
     <div class="logo-big">
-      <div class="logo"><svg><use href="#mark"/></svg><span><span class="t">Tech</span><span class="k">Kids</span><span class="id">.id</span></span></div>
+      <div class="logo"><img src="../assets/logo-mark.png" alt="" width="66" height="48"><span><span class="t">techkids.</span><span class="i">i</span><span class="d">d</span></span></div>
     </div>
     <p>Panduan identitas visual dan gaya bicara TechKids.id — tempat anak Palembang belajar coding, robotik, dan literasi digital.</p>
   </div>
@@ -212,37 +179,38 @@ footer strong{color:#fff;font-family:'Fredoka';font-size:20px}
   </div>
   <h3>Tagline</h3>
   <div class="card blue" style="color:#fff;text-align:center;padding:40px">
-    <div style="font:700 clamp(24px,4vw,40px) 'Fredoka'">“Anak Palembang, Pencipta Teknologi Masa Depan”</div>
+    <div style="font:700 clamp(28px,5vw,48px) 'Fredoka'">Belajar. Berkarya. Bertumbuh.</div>
+    <p style="margin-top:12px;font-size:19px;opacity:.95">Tagline pada logo. Pernyataan pendukung: “Anak Palembang, Pencipta Teknologi Masa Depan”.</p>
   </div>
 </section>
 
 <!-- 2. LOGO -->
 <section id="logo">
   <h2>Logo</h2>
-  <p class="lead">Logo terdiri dari simbol dan wordmark. Simbol memadukan tanda kode <code>&lt;/&gt;</code> dengan gelombang Sungai Musi dan titik oranye sebagai “ikon songket”.</p>
+  <p class="lead">Logo terdiri dari simbol dan wordmark. Simbol adalah wajah robot yang tersenyum, diapit tanda kode <code>&lt;</code> dan <code>&gt;</code>, dengan antena warna-warni. Wordmark ditulis huruf kecil bulat: <b>techkids.id</b>, dengan “.id” berwarna.</p>
 
   <div class="grid g2">
     <div class="card center">
-      <div class="logo"><svg><use href="#mark"/></svg><span><span class="t">Tech</span><span class="k">Kids</span><span class="id">.id</span></span></div>
+      <img class="stack" src="../assets/logo.png" alt="Logo bertumpuk TechKids.id dengan tagline Belajar. Berkarya. Bertumbuh." width="320">
     </div>
     <div class="card center dark">
-      <div class="logo on-dark"><svg><use href="#mark"/></svg><span><span class="t">Tech</span><span class="k">Kids</span><span class="id">.id</span></span></div>
+      <div class="logo on-dark"><img src="../assets/logo-mark.png" alt="" width="66" height="48"><span><span class="t">techkids.</span><span class="i">i</span><span class="d">d</span></span></div>
     </div>
   </div>
-  <p class="cap">Versi utama (latar terang) dan versi terbalik (latar gelap).</p>
+  <p class="cap">Kiri: logo utama bertumpuk (hanya untuk latar putih atau terang). Kanan: versi horizontal dengan teks putih untuk latar gelap.</p>
 
   <h3>Simbol saja</h3>
   <div class="grid g3">
-    <div class="card center"><svg width="96" height="96"><use href="#mark"/></svg></div>
-    <div class="card center" style="color:var(--navy)"><svg width="96" height="96"><use href="#mark-mono"/></svg></div>
-    <div class="card center blue" style="color:#fff"><svg width="96" height="96" style="color:#fff"><use href="#mark-mono"/></svg></div>
+    <div class="card center"><img src="../assets/logo-mark.png" alt="Simbol TechKids.id" width="150"></div>
+    <div class="card center" style="background:var(--awan)"><img src="../assets/logo-mark.png" alt="Simbol TechKids.id di latar awan" width="150"></div>
+    <div class="card center dark"><img src="../assets/logo-mark.png" alt="Simbol TechKids.id di latar navy" width="150"></div>
   </div>
-  <p class="cap">Warna penuh · satu warna gelap · satu warna putih. Pakai simbol untuk foto profil, favicon, dan stiker.</p>
+  <p class="cap">Simbol berwarna penuh di latar putih, awan, dan navy. Pakai simbol untuk foto profil, favicon, dan stiker.</p>
 
   <h3>Ruang aman &amp; ukuran minimum</h3>
   <div class="grid g2">
     <div class="card center">
-      <div class="clear"><div class="logo"><svg><use href="#mark"/></svg><span><span class="t">Tech</span><span class="k">Kids</span><span class="id">.id</span></span></div></div>
+      <div class="clear"><div class="logo"><img src="../assets/logo-mark.png" alt="" width="66" height="48"><span><span class="t">techkids.</span><span class="i">i</span><span class="d">d</span></span></div></div>
     </div>
     <div class="card">
       <ul class="voice">
@@ -255,9 +223,9 @@ footer strong{color:#fff;font-family:'Fredoka';font-size:20px}
 
   <h3>Penggunaan yang salah</h3>
   <div class="grid g3">
-    <div class="card center bad"><div class="logo" style="transform:scaleX(1.5)"><svg><use href="#mark"/></svg><span><span class="t">Tech</span><span class="k">Kids</span><span class="id">.id</span></span></div></div>
-    <div class="card center bad"><div class="logo" style="filter:hue-rotate(140deg) saturate(2)"><svg><use href="#mark"/></svg><span><span class="t">Tech</span><span class="k">Kids</span><span class="id">.id</span></span></div></div>
-    <div class="card center bad" style="background:repeating-linear-gradient(45deg,#f9c,#f9c 10px,#9cf 10px,#9cf 20px)"><div class="logo"><svg><use href="#mark"/></svg><span><span class="t">Tech</span><span class="k">Kids</span><span class="id">.id</span></span></div></div>
+    <div class="card center bad"><div class="logo" style="transform:scaleX(1.5)"><img src="../assets/logo-mark.png" alt="" width="66" height="48"><span><span class="t">techkids.</span><span class="i">i</span><span class="d">d</span></span></div></div>
+    <div class="card center bad"><div class="logo" style="filter:hue-rotate(140deg) saturate(2)"><img src="../assets/logo-mark.png" alt="" width="66" height="48"><span><span class="t">techkids.</span><span class="i">i</span><span class="d">d</span></span></div></div>
+    <div class="card center bad" style="background:repeating-linear-gradient(45deg,#f9c,#f9c 10px,#9cf 10px,#9cf 20px)"><div class="logo"><img src="../assets/logo-mark.png" alt="" width="66" height="48"><span><span class="t">techkids.</span><span class="i">i</span><span class="d">d</span></span></div></div>
   </div>
   <p class="cap">Jangan diregangkan · jangan ganti warna · jangan taruh di atas latar ramai atau kontras rendah. Jangan juga memutar, memberi bayangan, atau mengubah huruf.</p>
 </section>
@@ -265,38 +233,41 @@ footer strong{color:#fff;font-family:'Fredoka';font-size:20px}
 <!-- 3. WARNA -->
 <section id="warna">
   <h2>Warna</h2>
-  <p class="lead">Palet diambil dari Palembang: biru Sungai Musi, oranye dan emas kain songket. Klik kotak warna untuk menyalin kode HEX.</p>
+  <p class="lead">Palet mengikuti warna pada logo: biru, koral, kuning, dan hijau di atas navy yang tegas. Klik kotak warna untuk menyalin kode HEX.</p>
 
   <h3 style="margin-top:0">Warna utama</h3>
   <div class="grid g3">
-    <div class="sw" data-hex="#0B5FA5"><div class="chip" style="background:#0B5FA5">Biru Musi</div><div class="meta"><code>#0B5FA5</code><small>RGB 11 · 95 · 165<br>Warna dominan, judul, tombol sekunder</small></div></div>
-    <div class="sw" data-hex="#F26B1D"><div class="chip" style="background:#F26B1D">Oranye Songket</div><div class="meta"><code>#F26B1D</code><small>RGB 242 · 107 · 29<br>Aksi utama (CTA), sorotan</small></div></div>
-    <div class="sw" data-hex="#F6B92B"><div class="chip" style="background:#F6B92B;color:#0A2540">Emas</div><div class="meta"><code>#F6B92B</code><small>RGB 246 · 185 · 43<br>Lencana, bintang, aksen</small></div></div>
+    <div class="sw" data-hex="#0275FE"><div class="chip" style="background:#0275FE">Biru Cerah</div><div class="meta"><code>#0275FE</code><small>RGB 2 · 117 · 254<br>Warna dominan, bingkai robot, tombol sekunder</small></div></div>
+    <div class="sw" data-hex="#E8262F"><div class="chip" style="background:#E8262F">Koral</div><div class="meta"><code>#E8262F</code><small>RGB 232 · 38 · 47<br>Aksi utama (CTA), sorotan</small></div></div>
+    <div class="sw" data-hex="#FEBF04"><div class="chip" style="background:#FEBF04;color:#061539">Kuning</div><div class="meta"><code>#FEBF04</code><small>RGB 254 · 191 · 4<br>Lencana, bintang, aksen</small></div></div>
   </div>
 
   <h3>Warna pendukung</h3>
   <div class="grid g3" style="grid-template-columns:repeat(auto-fit,minmax(160px,1fr))">
-    <div class="sw" data-hex="#083F70"><div class="chip" style="background:#083F70;font-size:16px">Biru Dalam</div><div class="meta"><code>#083F70</code></div></div>
-    <div class="sw" data-hex="#0A2540"><div class="chip" style="background:#0A2540;font-size:16px">Navy Malam</div><div class="meta"><code>#0A2540</code><small>Teks &amp; latar gelap</small></div></div>
-    <div class="sw" data-hex="#22A06B"><div class="chip" style="background:#22A06B;font-size:16px">Hijau Daun</div><div class="meta"><code>#22A06B</code><small>Sukses, level Tunas</small></div></div>
-    <div class="sw" data-hex="#F4F8FC"><div class="chip" style="background:#F4F8FC;color:#0A2540;font-size:16px;border-bottom:1px solid #DCE5EE">Awan</div><div class="meta"><code>#F4F8FC</code><small>Latar halaman</small></div></div>
+    <div class="sw" data-hex="#0A4FB3"><div class="chip" style="background:#0A4FB3;font-size:16px">Biru Tua</div><div class="meta"><code>#0A4FB3</code></div></div>
+    <div class="sw" data-hex="#061539"><div class="chip" style="background:#061539;font-size:16px">Navy</div><div class="meta"><code>#061539</code><small>Teks, wajah robot, latar gelap</small></div></div>
+    <div class="sw" data-hex="#03BE50"><div class="chip" style="background:#03BE50;color:#061539;font-size:16px">Hijau</div><div class="meta"><code>#03BE50</code><small>Ikon, sukses. Teks navy di atasnya</small></div></div>
+    <div class="sw" data-hex="#08893E"><div class="chip" style="background:#08893E;font-size:16px">Hijau Tua</div><div class="meta"><code>#08893E</code><small>Latar dengan teks putih, level Tunas</small></div></div>
+    <div class="sw" data-hex="#F4F8FC"><div class="chip" style="background:#F4F8FC;color:#061539;font-size:16px;border-bottom:1px solid #DCE5EE">Awan</div><div class="meta"><code>#F4F8FC</code><small>Latar halaman</small></div></div>
     <div class="sw" data-hex="#5B6B7C"><div class="chip" style="background:#5B6B7C;font-size:16px">Abu Batu</div><div class="meta"><code>#5B6B7C</code><small>Teks sekunder</small></div></div>
   </div>
 
   <h3>Proporsi pemakaian</h3>
   <div class="ratio">
-    <div style="flex:50;background:#F4F8FC;color:#0A2540;border:1px solid #DCE5EE">Awan / Putih 50%</div>
-    <div style="flex:25;background:#0B5FA5;color:#fff">Biru Musi 25%</div>
-    <div style="flex:15;background:#F26B1D;color:#fff">Oranye 15%</div>
-    <div style="flex:10;background:#F6B92B;color:#0A2540">Emas 10%</div>
+    <div style="flex:50;background:#F4F8FC;color:#061539;border:1px solid #DCE5EE">Awan / Putih 50%</div>
+    <div style="flex:25;background:#0275FE;color:#fff">Biru 25%</div>
+    <div style="flex:15;background:#E8262F;color:#fff">Koral 15%</div>
+    <div style="flex:10;background:#FEBF04;color:#061539">Kuning 10%</div>
   </div>
-  <p class="cap">Oranye hanya untuk hal yang harus diklik atau diperhatikan. Jangan pakai untuk paragraf panjang.</p>
+  <p class="cap">Koral hanya untuk hal yang harus diklik atau diperhatikan. Jangan pakai untuk paragraf panjang. Warna pada gambar logo sedikit lebih terang (misalnya merah #FE2B33), jangan diubah. Untuk teks dan tombol di antarmuka pakai kode di atas agar kontrasnya lulus.</p>
 
   <h3>Kontras teks (WCAG AA)</h3>
   <div class="grid g3" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">
-    <div class="card" style="background:#0B5FA5;color:#fff;padding:18px"><b>Putih di Biru Musi</b><br><small>Lulus (≈ 6.7:1)</small></div>
-    <div class="card" style="background:#F6B92B;color:#0A2540;padding:18px"><b>Navy di Emas</b><br><small>Lulus (≈ 8:1)</small></div>
-    <div class="card" style="background:#F26B1D;color:#fff;padding:18px"><b>Putih di Oranye</b><br><small>Hanya untuk teks besar/tebal (≈ 3:1)</small></div>
+    <div class="card" style="background:#0275FE;color:#fff;padding:18px"><b>Putih di Biru Cerah</b><br><small>4.2:1 — hanya teks besar atau tebal</small></div>
+    <div class="card" style="background:#FEBF04;color:#061539;padding:18px"><b>Navy di Kuning</b><br><small>Lulus (10.8:1)</small></div>
+    <div class="card" style="background:#E8262F;color:#fff;padding:18px"><b>Putih di Koral</b><br><small>4.4:1 — teks besar atau tebal (tombol)</small></div>
+    <div class="card" style="background:#08893E;color:#fff;padding:18px"><b>Putih di Hijau Tua</b><br><small>Lulus (4.5:1)</small></div>
+    <div class="card" style="background:#03BE50;color:#fff;padding:18px"><b>Putih di Hijau</b><br><small>Tidak lulus (2.5:1). Pakai teks navy (7.2:1)</small></div>
   </div>
 </section>
 
@@ -365,20 +336,20 @@ footer strong{color:#fff;font-family:'Fredoka';font-size:20px}
 
 <!-- 6. MASKOT -->
 <section id="maskot">
-  <h2>Maskot: <span>Beli-Bot</span></h2>
-  <p class="lead">Ikan belido (ikan khas Sungai Musi) berkacamata robot dengan antena emas. Ramah, penasaran, dan selalu siap membantu.</p>
+  <h2>Maskot: <span>Robot TechKids</span></h2>
+  <p class="lead">Robot berwajah tersenyum dengan bingkai biru dan mata putih yang ceria. Ramah, penasaran, dan selalu siap membantu. Nama maskot belum ditentukan.</p>
 
   <div class="card">
     <div class="mascot-box">
-      <svg width="260" height="180" viewBox="0 0 160 110"><use href="#fish"/></svg>
+      <img src="../assets/logo-mark.png" alt="Maskot robot TechKids.id" width="260">
       <div style="flex:1;min-width:260px">
         <ul class="voice">
           <li><b>Peran:</b> pemandu di modul, stiker, dan sosial media.</li>
           <li><b>Kepribadian:</b> ceria, penasaran, suka bertanya “Kalau begini, jadi apa ya?”</li>
-          <li><b>Aturan:</b> selalu berwarna oranye dengan kacamata putih bingkai biru. Tidak dipakai untuk pesan serius seperti pengumuman biaya atau kebijakan keamanan.</li>
+          <li><b>Aturan:</b> wajah selalu navy dengan bingkai biru dan mata putih melengkung senang. Tidak dipakai untuk pesan serius seperti pengumuman biaya atau kebijakan keamanan.</li>
           <li><b>Ekspresi:</b> senang, berpikir, merayakan, semangat (dibuat oleh ilustrator dari desain dasar ini).</li>
         </ul>
-        <p class="cap">Ilustrasi di atas adalah sketsa konsep. Versi final sebaiknya dikerjakan ilustrator.</p>
+        <p class="cap">Gambar di atas adalah simbol logo. Variasi ekspresi belum ada dan sebaiknya dikerjakan ilustrator.</p>
       </div>
     </div>
   </div>
@@ -422,8 +393,8 @@ footer strong{color:#fff;font-family:'Fredoka';font-size:20px}
       <h3 style="margin-top:0">Label &amp; status</h3>
       <p style="display:flex;gap:10px;flex-wrap:wrap">
         <span class="pill" style="background:#E6F6EE;color:#187A50">Tunas</span>
-        <span class="pill" style="background:#E3EEF8;color:#0B5FA5">Kreator</span>
-        <span class="pill" style="background:#0A2540;color:#fff">Inovator</span>
+        <span class="pill" style="background:#E3EEF8;color:#0275FE">Kreator</span>
+        <span class="pill" style="background:#061539;color:#fff">Inovator</span>
         <span class="pill" style="background:#FEF3D6;color:#8A6100">Beasiswa</span>
         <span class="pill" style="background:#FDE8DA;color:#B24A0A">Kuota Terbatas</span>
       </p>
@@ -449,7 +420,7 @@ footer strong{color:#fff;font-family:'Fredoka';font-size:20px}
   <p class="lead">Tiga template dasar untuk Instagram (1:1). Tiap unggahan punya satu pesan, satu warna latar, dan logo kecil.</p>
   <div class="grid g3">
     <div class="post p1">
-      <div><span class="pill" style="background:var(--emas);color:var(--navy)">Karya Murid</span></div>
+      <div><span class="pill" style="background:var(--kuning);color:var(--navy)">Karya Murid</span></div>
       <h4>Game “Tangkap Pempek” karya Rara, 10 tahun!</h4>
       <div class="foot">TechKids.id · @techkids.id</div>
     </div>
@@ -459,7 +430,7 @@ footer strong{color:#fff;font-family:'Fredoka';font-size:20px}
       <div class="foot">TechKids.id · @techkids.id</div>
     </div>
     <div class="post p3">
-      <div><span class="pill" style="background:#fff;color:var(--songket)">Kelas Baru</span></div>
+      <div><span class="pill" style="background:#fff;color:var(--koral)">Kelas Baru</span></div>
       <h4>Trial gratis Scratch! Sabtu, 10.00 WIB. Kuota 10 anak.</h4>
       <div class="foot">TechKids.id · @techkids.id</div>
     </div>
@@ -481,7 +452,7 @@ footer strong{color:#fff;font-family:'Fredoka';font-size:20px}
 <footer>
   <div class="wrap">
     <strong>TechKids.id</strong>
-    <p style="margin-top:8px">Anak Palembang, Pencipta Teknologi Masa Depan · Brand Guideline v1.0</p>
+    <p style="margin-top:8px">Anak Palembang, Pencipta Teknologi Masa Depan · Brand Guideline v1.1</p>
   </div>
 </footer>
 
